@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.purple,
       body: Center(
         child: Text(
-          "MY FLYN",  // Your app name or text
+          "MY FLYN", 
           style: const TextStyle(
             color: Colors.white,
             fontSize: 28,

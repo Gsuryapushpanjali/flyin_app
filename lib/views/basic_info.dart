@@ -24,18 +24,22 @@ class BasicInfo extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // 기본정보 (Basic Information)
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: const Text('Basic Information', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
                     ),
+                    // 아이디 (User ID)
                     const Text('User ID', style: TextStyle(fontWeight: FontWeight.bold)),
                     Obx(() => Padding(padding: const EdgeInsets.symmetric(vertical: 8.0), child: Text(ctrl.userId.value))),
                     const Divider(),
                     const SizedBox(height: 12),
+                    // 이메일 (Email)
                     const Text('Email', style: TextStyle(fontWeight: FontWeight.bold)),
                     Obx(() => Padding(padding: const EdgeInsets.symmetric(vertical: 8.0), child: Text(ctrl.email.value))),
                     const Divider(),
                     const SizedBox(height: 12),
+                    // 휴대폰 번호 (Mobile Number)
                     Row(
                       children: [
                         Expanded(
@@ -69,10 +73,12 @@ class BasicInfo extends StatelessWidget {
                     ),
                     const Divider(),
                     const SizedBox(height: 12),
+                    // 닉네임 (Nickname)
                     const Text('Nickname', style: TextStyle(fontWeight: FontWeight.bold)),
                     Obx(() => Padding(padding: const EdgeInsets.symmetric(vertical: 8.0), child: Text(ctrl.nickname.value))),
                     const Divider(),
                     const SizedBox(height: 12),
+                    // 대표 작업 링크 (Main Work Link)
                     const Text('Main Work Link', style: TextStyle(fontWeight: FontWeight.bold)),
                     Obx(
                       () => Padding(
@@ -83,6 +89,7 @@ class BasicInfo extends StatelessWidget {
                     const SizedBox(height: 12),
                     const Divider(),
 
+                    // 포트폴리오 (Portfolio)
                     const Text('Portfolio', style: TextStyle(fontWeight: FontWeight.bold)),
                     Obx(
                       () => Row(

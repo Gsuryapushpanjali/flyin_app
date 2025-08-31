@@ -50,10 +50,11 @@ class _HomeState extends State<Home> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Header with photo
+              // 상단 인사 및 사진 등록 (Header greeting and photo registration)
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  // 안녕하세요, 홍길동님 (Hello, Hong Gildong)
                   const Text(
                     "Hello,\nHong Gildong",
                     style: TextStyle(
@@ -64,6 +65,7 @@ class _HomeState extends State<Home> {
                   ),
                   Column(
                     children: [
+                      // 이미지 등록 (Add Photo)
                       IconButton(
                         icon: const Icon(Icons.camera_alt, size: 32, color: Colors.grey),
                         onPressed: _choosePhoto,

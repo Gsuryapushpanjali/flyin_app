@@ -22,10 +22,14 @@ class MyInfo extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // 내 정보 (My Info)
               const Text('My Info', style: TextStyle(fontSize: 44, fontWeight: FontWeight.bold)),
               const SizedBox(height: 24),
+              // 기본 정보 (Basic Information)
               ListTileRow(title: 'Basic Information', onTap: ctrl.goToBasicInfo),
+              // 비밀번호 설정 (Set Password)
               ListTileRow(title: 'Set Password', onTap: ctrl.goToSetPassword),
+              // 관심 카테고리 (Interest Categories)
               ListTileRow(title: 'Interest Categories', onTap: ctrl.goToInterestCategories),
             ],
           ),

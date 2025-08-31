@@ -12,6 +12,7 @@ class CampaignMatching extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
+          // 캠페인 매칭 (Campaign Matching)
           title: const Text('Campaign Matching', style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold)),
           centerTitle: false,
           iconTheme: const IconThemeData(color: Colors.black),
@@ -20,14 +21,17 @@ class CampaignMatching extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             children: [
-              // Tab-like row (Application / In Progress / Completed)
+              // 신청 (Application) / 진행중 (In Progress) / 완료 (Completed)
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: const [
+                    // 신청 (Application)
                     Text('Application', style: TextStyle(fontWeight: FontWeight.bold)),
+                    // 진행중 (In Progress)
                     Text('In Progress'),
+                    // 완료 (Completed)
                     Text('Completed'),
                   ],
                 ),
@@ -52,10 +56,13 @@ class CampaignMatching extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
+                                // 회사명/캠페인명 (Company/Campaign Name)
                                 Text(c.title, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                                 const SizedBox(height: 8),
+                                // 소개말 (Description)
                                 Text(c.description, maxLines: 3, overflow: TextOverflow.ellipsis),
                                 const SizedBox(height: 8),
+                                // 태그 (Tags)
                                 Wrap(
                                   spacing: 12,
                                   children: c.tags.map((t) => Text(t, style: const TextStyle(color: Colors.deepPurple))).toList(),
