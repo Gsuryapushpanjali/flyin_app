@@ -6,7 +6,7 @@ class Password extends StatelessWidget {
   const Password({super.key});
   @override
   Widget build(BuildContext context) {
-    final ctrl = Get.find<AppScreen5Controller>();
+    final ctrl = Get.find<PasswordController>();
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.white, elevation: 0, iconTheme: const IconThemeData(color: Colors.black)),
       body: SafeArea(

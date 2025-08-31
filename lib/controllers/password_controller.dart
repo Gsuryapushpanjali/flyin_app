@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class AppScreen5Controller extends GetxController {
+class PasswordController extends GetxController {
   final RxString currentPassword = ''.obs;
   final RxString newPassword = ''.obs;
   final RxString confirmPassword = ''.obs;

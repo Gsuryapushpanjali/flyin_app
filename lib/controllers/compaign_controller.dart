@@ -7,7 +7,7 @@ class Campaign {
   Campaign({required this.title, required this.description, required this.tags});
 }
 
-class AppScreen2Controller extends GetxController {
+class ComapignMatchingController extends GetxController {
   final RxList<Campaign> campaigns = <Campaign>[].obs;
 
   @override

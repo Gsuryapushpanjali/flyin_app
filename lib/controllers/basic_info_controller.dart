@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class AppScreen4Controller extends GetxController {
+class BaiscInfoController extends GetxController {
   var userId = "asdf123".obs;
   var email = "asdf123@naver.com".obs;
   var mobile = "010-1234-5678".obs;

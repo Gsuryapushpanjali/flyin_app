@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class AppScreen3Controller extends GetxController {
+class MyInfoController extends GetxController {
   final RxString userId = 'asdf123'.obs;
   final RxString email = 'asdf123@naver.com'.obs;
   final RxString mobile = '010-1234-5678'.obs;

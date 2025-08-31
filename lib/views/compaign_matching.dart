@@ -6,7 +6,7 @@ class CampaignMatching extends StatelessWidget {
   const CampaignMatching({super.key});
   @override
   Widget build(BuildContext context) {
-    final ctrl = Get.find<AppScreen2Controller>();
+    final ctrl = Get.find<ComapignMatchingController>();
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(

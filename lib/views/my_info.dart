@@ -8,7 +8,7 @@ class MyInfo extends StatelessWidget {
   const MyInfo({super.key});
   @override
   Widget build(BuildContext context) {
-    final ctrl = Get.find<AppScreen3Controller>();
+    final ctrl = Get.find<MyInfoController>();
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(

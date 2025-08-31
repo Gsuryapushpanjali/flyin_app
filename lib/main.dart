@@ -20,10 +20,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       getPages: AppRoutes.pages,
 theme: AppTheme.lightTheme,
-
-      // theme: ThemeData(
-      //   fontFamily: 'Roboto',
-      // ),
     );
   }
 }

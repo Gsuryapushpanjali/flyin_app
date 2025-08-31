@@ -7,7 +7,7 @@ class BasicInfo extends StatelessWidget {
   const BasicInfo({super.key});
   @override
   Widget build(BuildContext context) {
-    final ctrl = Get.find<AppScreen4Controller>();
+    final ctrl = Get.find<BaiscInfoController>();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
