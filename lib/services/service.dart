@@ -15,7 +15,6 @@ class MediaService {
     if (Platform.isAndroid) {
       statuses[Permission.storage] = await Permission.storage.request();
     }
-    // True if all granted
     return statuses.values.every((s) => s.isGranted);
   }
 

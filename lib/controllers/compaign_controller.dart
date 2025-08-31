@@ -20,6 +20,4 @@ class AppScreen2Controller extends GetxController {
       Campaign(title: 'Company Name Here', description: 'This is the introduction text for the campaign. Only a brief prview is shown...', tags: ['F&B','Fashion','Kids','Interior']),
     ]);
   }
-
-  // If you later implement pagination or refresh: methods go here
 }

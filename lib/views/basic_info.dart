@@ -55,13 +55,13 @@ class BasicInfo extends StatelessWidget {
                         ElevatedButton(
   onPressed: ctrl.changeMobile,
   style: ElevatedButton.styleFrom(
-    backgroundColor: Colors.deepPurple, // button fill color
-    foregroundColor: Colors.white, // text color
+    backgroundColor: Colors.deepPurple, 
+    foregroundColor: Colors.white,
     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
     shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8), // slightly rounded corners
+      borderRadius: BorderRadius.circular(8),
     ),
-    elevation: 0, // flat look like in design
+    elevation: 0, 
   ),
   child: const Text(
     "Change",
@@ -109,107 +109,3 @@ class BasicInfo extends StatelessWidget {
     );
   }
 }
-
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
-// import '../controllers/basicinfoctrl.dart';
-// import '../widgets/rounded_card.dart';
-
-// class BasicInfo extends StatelessWidget {
-//   const BasicInfo({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     final ctrl = Get.find<AppScreen4Controller>();
-//     return Scaffold(
-//       appBar: AppBar(
-//         backgroundColor: Colors.white,
-//         elevation: 0,
-//         iconTheme: const IconThemeData(color: Colors.black),
-//         title: const Text("Basic Information",
-//             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
-//         centerTitle: false,
-//       ),
-//       body: SafeArea(
-//         child: SingleChildScrollView(
-//           padding: const EdgeInsets.all(16.0),
-//           child: RoundedCard(
-//             child: Padding(
-//               padding: const EdgeInsets.all(16.0),
-//               child: Column(
-//                   crossAxisAlignment: CrossAxisAlignment.start,
-//                   children: [
-//                     buildInfoRow("User ID", Obx(() => Text(ctrl.userId.value))),
-//                     buildDivider(),
-//                     buildInfoRow("Email", Obx(() => Text(ctrl.email.value))),
-//                     buildDivider(),
-//                     buildMobileRow(ctrl),
-//                     buildDivider(),
-//                     buildInfoRow("Nickname", Obx(() => Text(ctrl.nickname.value))),
-//                     buildDivider(),
-//                     buildInfoRow(
-//                       "Main Work Link",
-//                       Obx(() => GestureDetector(
-//                             onTap: () {
-//                               // Launch URL
-//                             },
-//                             child: Text(ctrl.workLink.value,
-//                                 style: const TextStyle(
-//                                     color: Colors.blue,
-//                                     decoration: TextDecoration.underline)),
-//                           )),
-//                     ),
-//                     buildDivider(),
-//                     buildInfoRow(
-//                       "Portfolio",
-//                       Obx(() => Row(
-//                             children: [
-//                               Expanded(child: Text(ctrl.portfolio.value)),
-//                               const Icon(Icons.attach_file,
-//                                   size: 18, color: Colors.grey),
-//                             ],
-//                           )),
-//                     ),
-//                   ]),
-//             ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-
-//   Widget buildInfoRow(String label, Widget value) {
-//     return Padding(
-//       padding: const EdgeInsets.symmetric(vertical: 12.0),
-//       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-//         Text(label, style: const TextStyle(fontWeight: FontWeight.bold)),
-//         const SizedBox(height: 6),
-//         value
-//       ]),
-//     );
-//   }
-
-//   Widget buildMobileRow(AppScreen4Controller ctrl) {
-//     return Padding(
-//       padding: const EdgeInsets.symmetric(vertical: 12.0),
-//       child: Row(
-//         children: [
-//           Expanded(
-//             child: Column(
-//                 crossAxisAlignment: CrossAxisAlignment.start,
-//                 children: [
-//                   const Text("Mobile Number",
-//                       style: TextStyle(fontWeight: FontWeight.bold)),
-//                   const SizedBox(height: 6),
-//                   Obx(() => Text(ctrl.mobile.value)),
-//                 ]),
-//           ),
-//           ElevatedButton(
-//               onPressed: ctrl.changeMobile, child: const Text("Change"))
-//         ],
-//       ),
-//     );
-//   }
-
-//   Widget buildDivider() => const Divider(thickness: 1, height: 1);
-// }

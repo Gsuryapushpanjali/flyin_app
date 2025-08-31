@@ -7,7 +7,6 @@ class AppScreen5Controller extends GetxController {
   final RxString confirmPassword = ''.obs;
 
   bool validate() {
-    // very brief validation demonstration
     if (newPassword.value.length < 5 || newPassword.value.length > 13) {
       Get.snackbar('Error', 'New password must be 5-13 characters');
       return false;
@@ -21,7 +20,6 @@ class AppScreen5Controller extends GetxController {
 
   void complete() {
     if (!validate()) return;
-    // perform password update flow (API call...)
     Get.dialog(AlertDialog(
       title: const Text('Password'),
       content: const Text('Password updated (demo).'),

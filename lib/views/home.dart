@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // ✅ clean white background
+      backgroundColor: Colors.white, 
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -145,7 +145,7 @@ GestureDetector(
 
   Widget _menuItem(IconData icon, String text, {VoidCallback? onTap}) {
     return ListTile(
-      leading: Icon(icon, color: Colors.black87), // ✅ consistent black
+      leading: Icon(icon, color: Colors.black87), 
       title: Text(
         text,
         style: const TextStyle(color: Colors.black, fontSize: 16),
